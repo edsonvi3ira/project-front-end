@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <title>Regras do Css</title>    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Como usar</a> | 
+            <a href="#">Text</a> |
+            <a href="#">Color</a> |
+            <a href="#">Font</a> |
+        </nav>
+    </header>
+
+    <section class="usar">
+         <br>    
+         <h2>Como utilizar o CSS</h2>
+         <br>
+         <p>
+            Esse pequeno tutorial foi desenvolvido para servir de guia 
+            rápido para o uso do CSS
+         </p>
+         <img src="img/Como usar.png" alt="">
+         <br>   
+    </section>
+
+    <section class="Text">
+        <br>
+        Text Color <br>
+        Text Alignment <br>
+        Text Decoration <br>
+        Text Transformation <br>
+        Text Spacing <br>
+        Text Shadow <br>
+    </section>
+
+    <section class="color">
+        Colors
+        RGB
+        HEX
+        HSL
+    </section>
+
+    <section class="fonte">
+        <img src="img/fonte.png" alt="Explicação da diferença de sem serifa e com serifa">
+        <p>
+            No CSS, usamos a propriedade para especificar a fonte de um texto : <span>font-family</span>
+        </p>
+        <p> A propriedade é usada principalmente para especificar texto em itálico : <span>font-style</span>
+            Esta propriedade tem três valores:
+            <ul>
+                <li>normal - O texto é mostrado normalmente</li>  <br>
+                <li>itálico - O texto é mostrado em itálico</li>  <br>
+                <li>oblíquo - O texto é "inclinado"               <br>        
+                    (oblíquo é muito semelhante ao itálico,
+                     mas menos suportado)</li> <br>
+            </ul>
+        
+        </p>
+        <p>A propriedade define o tamanho do texto : <span>font-size</span> 
+            Ser capaz de gerenciar o tamanho do texto é importante no web design. <br>
+            No entanto, você não deve usar ajustes de tamanho de fonte para fazer com que os parágrafos pareçam títulos, <br>
+            ou os títulos se parecem com parágrafos. <br>
+
+            <span class="exemplo">
+                font-size: <span>40px</span>; <br>
+                font-size: <span>40rem</span>;
+            </span> 
+        </p>
+
+
+        <p>
+            <h3>A propriedade CSS Font</h3>
+            Para encurtar o código,
+            também é possível especificar todas as propriedades
+            de fonte individuais em uma propriedade.
+            <br>
+            A <span>font</span>propriedade é uma propriedade
+            abreviada para: <br>
+            <ul>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+                <li>font-size/line-height</li>
+                <li>font-family</li>
+            </ul>
+            <strong>Nota:</strong>: Os valores e são obrigatórios.
+            Se um dos outros valores estiver ausente,
+            seu valor padrão será usado <span>font-size font-family</span>  
+        </p>
+    </section>  
+</body>
+</html>
