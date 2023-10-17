@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavinhaScript</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .baby{
+            width: 375px;
+            height: 325px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+    <script>
+        //DECLARANDO VARIAVEIS
+        var AcessoGlobal; //É O TIPO QUE PODE SER ACESSADA EM TODO PROGRAMA
+        let AcessoLocal; //PODE SER ACESSADA APENAS NO ESCOPO EM QUE NASCEU
+        // VARIÁVEL DO TIPO CONST PRECISA SER INICIALIZADA
+        const naoMuda = 'Esse valor é imutável' //NÃO PODE SER ALTERADA
+
+        let nome, idade, altura;
+        let num1 = 3, num2 = 6, num3 = 9;
+        var txt1 = 'Que', txt2 = 'calor', txt3 = 'danado';
+        const cachorro = 'AUAU';
+
+        nome = prompt('Diga seu nome:');    
+        idade = prompt('Diga sua idade:');
+
+
+        window.document.write('<h3> Salve, '+ nome +'! </h3>');
+        document.write(nome + ', você tem: ' + idade + ' anos' + '<br>');
+        document.write('<br>');
+        document.write('Clique na imagem para saber quantos filhos <br> você irá ter: <br>')
+        document.write('<img class="baby" src="baby.gif"/> ');
+        //ARMAZENANDO A IMAGEM NO LADO DO JAVASCRIPT
+        let imgClique = document.querySelector('.baby')
+        imgClique.addEventListener('click', function(){
+            let qntdFilhos = Math.floor(Math.random() * 10)
+            document.write(nome + ', você apesar de já ter ' + idade + ' anos');
+            document.write('<br> seu karma é ter ' + qntdFilhos + ' de filhos correndo atrás de você');
+            document.write('<br> HAHAHAHAHAHA!!');
+        })
+
+
+
+    </script>
+</body>
+</html>
