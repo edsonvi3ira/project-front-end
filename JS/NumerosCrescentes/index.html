@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Crescentes</title>
+</head>
+<body>
+    <script>
+         // Solicita ao usuário que insira três números
+const num1 = parseFloat(prompt("Digite o primeiro número:"));
+const num2 = parseFloat(prompt("Digite o segundo número:"));
+const num3 = parseFloat(prompt("Digite o terceiro número:"));
+
+// Inicializa um array com os números
+const numeros = [num1, num2, num3];
+
+// Ordena o array em ordem crescente
+numeros.sort((a, b) => a - b);
+
+// Exibe os números em ordem crescente
+console.log("Números em ordem crescente:", numeros);
+
+    </script>
+    
+</body>
+</html>

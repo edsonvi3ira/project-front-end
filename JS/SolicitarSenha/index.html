@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitaçao de senha de 8 caracteres</title>
+</head>
+<body>
+    <script>
+         // Solicita ao usuário que insira a senha
+let senha = prompt("Digite sua senha:");
+
+// Verifica se a senha tem no mínimo 8 caracteres
+if (senha.length >= 8) {
+  alert("Senha válida. Ela possui pelo menos 8 caracteres.");
+} else {
+  alert("Senha inválida. A senha deve ter pelo menos 8 caracteres.");
+  senha = prompt('digite uma senha válida de no minimo 8 caracteres')
+}
+    </script>
+    
+</body>
+</html>

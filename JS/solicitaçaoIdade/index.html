@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socilicitar idade</title>
+</head>
+<body>
+    <script>
+   // Solicita ao usuário que insira sua idade
+const idade = parseInt(prompt("Digite sua idade:"));
+
+// Verifica a faixa etária com base na idade
+if (idade < 18) {
+  console.log('idade: ' +idade+'\n'+"Você é menor de idade.");
+} else if (idade >= 18 && idade < 60) {
+  console.log('idade: ' +idade+'\n'+"Você é maior de idade.");
+} else {
+  console.log('idade: ' +idade+'\n'+"Você é idoso.");
+}
+</script>
+    
+</body>
+</html>
